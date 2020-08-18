@@ -1,7 +1,7 @@
 class BCalculatorService {
   constructor(){
     this.performCalculation =( w, b) => {
-
+      
       if(b==0){
         throw Error('Error input value, it should be major than 0');
       }
