@@ -7,12 +7,12 @@ class Handler {
                 let height = event.queryStringParameters.height;
 
                 if(isNaN(weight) || isNaN(height)){
-                    return new Result.BadRequest_400();
+                    return new Result.BadRequest_400('error');
                 }
                 let  bmiResult = await this.bCalculatorService.performCalculation(weight, height);
                 return new Result.OK_200(bmiResult);
             }catch(e){
-                return new Result.InternalServerError_500();
+                return new Result.InternalServerError_500(e);
            }
         };
         this.bCalculatorService = bCalculatorService;
