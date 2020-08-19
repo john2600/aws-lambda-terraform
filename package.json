@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "nodemon":"nodemon local/localLambda.js"
+    "nodemon": "nodemon local/localLambda.js"
   },
   "keywords": [
     "cal"
