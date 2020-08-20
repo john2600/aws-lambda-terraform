@@ -24,7 +24,7 @@ app.route('/bmi')
     });
 
 var server = http.createServer(app);
-const port = 4000;
+const port = 4002;
 server.listen(port);
 console.log(`Server is up and listening on port ${port}`);
 module.exports = app;
